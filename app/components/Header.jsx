@@ -3,13 +3,13 @@ const Header = () => {
       <header className="bg-[#1A1D29] text-white py-4">
         <div className="container mx-auto flex justify-between items-center px-6">
           {/* Logo */}
-          <h1 className="text-xl font-bold">{'{Finsweet}'}</h1>
+          <h1 className="text-xl font-bold">{'{ Finsweet'}</h1>
   
           {/* Navigation */}
           <nav>
             <ul className="flex space-x-8 text-sm">
               <li>
-                <a href="#" className="hover:text-gray-300 transition">Home</a>
+                <a href="/" className="hover:text-gray-300 transition">Home</a>
               </li>
               <li>
                 <a href="/blog" className="hover:text-gray-300 transition">Blog</a>

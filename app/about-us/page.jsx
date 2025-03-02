@@ -1,6 +1,8 @@
+'use client'
 import ActionButton from "../components/ActionButton";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import { useRouter } from "next/navigation";
 
 const authors = [
     { name: "Floyd Miles", role: "Content Writer @Company", img: "/assets/floyd-miles.webp", social: ["facebook", "twitter", "instagram", "linkedin"], },
@@ -14,6 +16,7 @@ const authors = [
 ];
 
 const Page = () => {
+    const router = useRouter();
     return (
         <>
             <Header />
@@ -134,7 +137,8 @@ const Page = () => {
                         {authors.map((author, index) => (
                             <div
                                 key={index}
-                                className={`p-6 w-[286px] h-[280px] shadow-md flex flex-col items-center ${author.highlight ? "bg-gray-200" : "bg-gray-100"
+                                onClick={() => router.push('/author')}
+                                className={`p-6 cursor-pointer  w-[286px] h-[280px] shadow-md flex flex-col items-center ${author.highlight ? "bg-gray-200" : "bg-gray-100"
                                     }`}
                             >
                                 <img

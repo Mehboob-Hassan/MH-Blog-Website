@@ -1,9 +1,12 @@
+'use client'
 import ActionButton from "../components/ActionButton";
 import Catagories from "../components/Catagories";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import { useRouter } from 'next/navigation'
 
 const Page = () => {
+  const router = useRouter()
   const authors = [
     {
       name: "Floyd Miles",
@@ -60,9 +63,13 @@ const Page = () => {
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             Excepteur sint occaecat cupidatat non proident.
           </p>
-          <button className="generalButton mt-6  text-black px-6 py-3 font-semibold shadow-lg hover:bg-yellow-500 transition">
-            Read More &gt;
-          </button>
+          <a
+            href="/blog-post"
+          >
+            <button className="generalButton mt-6  text-black px-6 py-3 font-semibold shadow-lg hover:bg-yellow-500 transition">
+              Read More &gt;
+            </button>
+          </a>
         </div>
       </section>
 
@@ -89,9 +96,13 @@ const Page = () => {
                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                   fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
                 </p>
-                <button className="generalButton mt-4 bg-yellow-400 text-black px-5 py-2 font-thin rounded shadow-md hover:bg-yellow-500 transition">
-                  Read More &gt;
-                </button>
+                <a
+                  href="/blog-post"
+                >
+                  <button className="generalButton mt-4 bg-yellow-400 text-black px-5 py-2 font-thin rounded shadow-md hover:bg-yellow-500 transition">
+                    Read More &gt;
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -200,7 +211,7 @@ const Page = () => {
             {/* Button */}
             <div className="mt-6">
               <a
-                href="#"
+                href="/about-us"
                 className="generalButton bg-yellow-400 text-gray-900 font-thin px-6 py-3 shadow-md hover:bg-yellow-500 transition"
               >
                 Discover our story &gt;
@@ -217,8 +228,9 @@ const Page = () => {
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {authors.map((author, index) => (
             <div
+            onClick={() => router.push('/author')}
               key={index}
-              className={`py-12 shadow-md text-center ${author.highlighted ? "bg-yellow-100" : "bg-gray-100"
+              className={`py-12 cursor-pointer shadow-md text-center ${author.highlighted ? "bg-yellow-100" : "bg-gray-100"
                 }`}
             >
               <img

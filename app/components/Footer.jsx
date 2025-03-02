@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="w-[90%] h-[70vh] mx-auto px-6">
         {/* Top Section */}
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <h2 className="text-2xl font-bold">{'{Finsweet}'}</h2>
+          <h2 className="text-2xl font-bold">{'{ Finsweet'}</h2>
           <nav className="flex space-x-6 mt-4 md:mt-0">
             <a href="/" className="hover:text-gray-400">Home</a>
             <a href="/blog" className="hover:text-gray-400">Blog</a>
@@ -23,7 +23,7 @@ export default function Footer() {
             <input
               type="email"
               placeholder="Enter Your Email"
-              className="w-full md:w-2/3 px-4 py-3 bg-gray-800 border border-[1px]  text-gray-900 focus:outline-none"
+              className="w-full md:w-2/3 px-4 py-3 bg-gray-800 border border-[1px]  text-white-900 focus:outline-none"
             />
             <button className="generalButton mt-4 md:mt-0 md:ml-4 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 shadow-md transition">
               Subscribe

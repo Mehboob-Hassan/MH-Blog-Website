@@ -1,10 +1,12 @@
+"use client"
+import { useRouter } from "next/navigation";
 import ActionButton from "../components/ActionButton";
 import Catagories from "../components/Catagories";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const Page = () => {
-
+    const router = useRouter();
     const posts = [
         {
             image: '/assets/girl-on-board.webp',
@@ -54,7 +56,11 @@ const Page = () => {
                             <p className="my-4 text-gray-400">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien egestas fermentum. Nullam nec nisl nec nisl ultricies ultricies.
                             </p>
-                            <button className="generalButton font-semibold bg-yellow-500 text-white px-4 py-2 mt-4">Read More &gt;</button>
+                            <a
+                                href="/blog-post"
+                            >
+                                <button className="generalButton font-semibold bg-yellow-500 text-white px-4 py-2 mt-4">Read More &gt;</button>
+                            </a>
                         </div>
                     </div>
                     <div className="w-[45%] h-[100%] flex-center">
@@ -75,7 +81,7 @@ const Page = () => {
                     <div className="h-[1px] bg-gray-300 my-5"></div>
                     {
                         posts.map((post, index) => (
-                            <div className="bg-white py-8 flex flex-wrap justify-center" key={index}>
+                            <div className="bg-white cursor-pointer py-8 flex flex-wrap justify-center" key={index}>
                                 <div className="w-[40%] h-[300px]">
                                     <img
 
@@ -95,8 +101,12 @@ const Page = () => {
                         ))
                     }
                     <div className=" flex justify-center my-10 h-[5vw] flex items-center justify-around w-[20%] mx-auto">
-                        <h3 className="text-gray-400">&lt; Prev</h3>
-                        <h3 className=""> Next &gt;</h3>
+                        <a>
+                            <h3 onClick={() => router.push('/')} className="text-gray-400 cursor-pointer">&lt; Prev</h3>
+                        </a>
+                        <a>
+                            <h3 onClick={() => router.push('/')} className="cursor-pointer"> Next &gt;</h3>
+                        </a>
                     </div>
                 </div>
             </section>
