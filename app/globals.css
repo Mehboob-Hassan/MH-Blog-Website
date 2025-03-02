@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@700&family=Inter:wght@400&family=Poppins:wght@400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-sen: "Sen", serif;
+  --font-inter: "Inter", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  font-family: var(--font-sen);
+  color: #232536;
+}
+
+.desc, .desc2, .label, h1, h2, h3, h4, h5, h6, .generalButton {
+  font-family: var(--font-sen);
+  
+  /* color: #232536; */
+}
+
+
+.desc {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.desc2 {
+  font-weight: regular;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+p {
+  font-family: var(--font-sen);
+  font-weight: 500;
+  /* color: #6d6e76; */
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h1 {
+  letter-spacing: -2px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 64px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+h6 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+/* 
+.heading2 {
+  font-family: var(--font-sen);
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 48px;
+}
+
+.heading3 {
+  font-family: var(--font-sen);
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 48px;
+} */
+
+body {
+  font-family: var(--font-inter);
+}
+
+
+/* =================GENERAL CSS================ */
+.generalButton {
+  background-color: #fbd353;
+  color: #232536;
+  padding: 1vw 3.5vw;
+}
+
+/* =================GENERAL CSS END================ */
+
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/* =============MISSION VISION============= */
+.MissionVision {
+  padding: 8vw 2.5vw;
+}
+
+/* =========WHY WE STARTED========= */
+.whyWeStartedRight {
+  margin-top: 19vh;
+  margin-left: -27vw;
+  padding:5vw 4vw;
+}
