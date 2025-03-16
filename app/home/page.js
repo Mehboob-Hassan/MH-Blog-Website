@@ -11,26 +11,26 @@ const Page = () => {
     {
       name: "Floyd Miles",
       role: "Content Writer @Company",
-      image: "/assets/person1.webp",
+      image: "/assets/floyd-miles.webp",
       social: ["facebook", "twitter", "instagram", "linkedin"],
     },
     {
       name: "Dianne Russell",
       role: "Content Writer @Company",
-      image: "/assets/person2.webp",
+      image: "/assets/dianne-russel.png",
       social: ["facebook", "twitter", "instagram", "linkedin"],
       highlighted: true,
     },
     {
       name: "Jenny Wilson",
       role: "Content Writer @Company",
-      image: "/assets/person3.webp",
+      image: "/assets/jenny-wilson.webp",
       social: ["facebook", "twitter", "instagram", "linkedin"],
     },
     {
       name: "Leslie Alexander",
       role: "Content Writer @Company",
-      image: "/assets/person4.webp",
+      image: "/assets/leslie.webp",
       social: ["facebook", "twitter", "instagram", "linkedin"],
     },
   ];
@@ -38,7 +38,7 @@ const Page = () => {
   return (
     <div className="flex flex-col align-center justify-center">
       <Header />
-      <section className="relative w-full h-[90vh]  bg-black font-[sen]">
+      <section className="relative w-full h-[90vh]  bg-black">
         <div
           className="absolute inset-0 bg-cover bg-center scale-x-[-1]"
           style={{
@@ -47,26 +47,26 @@ const Page = () => {
           }}
         ></div>
 
-        <div className="relative z-10 max-w-5xl mx-[6vw] mt-[9.052vw] text-white text-center md:text-left">
-          <p className="uppercase text-sm tracking-[5px] font-[sen] mb-4">
+        <div className="relative z-10 max-w-3xl mx-[6vw] mt-[9.052vw] text-white text-center md:text-left">
+          <span className="uppercase tracking-[5px] mb-10 text-white-500">
             Posted on <span className="text-lg">Startup</span>
-          </p>
-          <h1 className="font-[sen] font-thin text-6xl leading-tight w-[100%]">
+          </span>
+          <h1 className="font-[sen] font-thin leading-tight w-[100%]">
             Step-by-step guide to choosing great font pairs
           </h1>
 
-          <p className="text-sm text-gray-300 mt-2 label">
-            By <span className="text-yellow-500">James West</span> | May 23, 2022
+          <p className="text-gray-300 mt-2">
+            By <span className="text-[#dfb94b]">James West</span> | May 23, 2024
           </p>
 
-          <p className="mt-4 w-[65%]">
+          <p className="mt-4 w-[70%] gray-p1">
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             Excepteur sint occaecat cupidatat non proident.
           </p>
           <a
             href="/blog-post"
           >
-            <button className="generalButton mt-6  text-black px-6 py-3 font-semibold shadow-lg hover:bg-yellow-500 transition">
+            <button className="generalButton mt-6">
               Read More &gt;
             </button>
           </a>
@@ -85,21 +85,21 @@ const Page = () => {
                 alt="Featured Post"
                 className="w-[100%] h-[25vw] object-cover"
               />
-              <div className="p-6 text-start">
+              <div className="py-6 text-start">
                 <p className="text-sm text-gray-500">
                   By <span className="text-primary font-thin">John Doe</span> | May 23, 2022
                 </p>
-                <h3 className="text-xl font-thin mt-2">
+                <h3 className="font-thin mt-2 tracking-tight">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                 </h3>
-                <p className="text-textGray mt-2 font-thin">
+                <p className="mt-2 font-thin w-[82%]">
                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                   fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
                 </p>
                 <a
                   href="/blog-post"
                 >
-                  <button className="generalButton mt-4 bg-yellow-400 text-black px-5 py-2 font-thin rounded shadow-md hover:bg-yellow-500 transition">
+                  <button className="generalButton mt-4">
                     Read More &gt;
                   </button>
                 </a>
@@ -193,7 +193,7 @@ const Page = () => {
               // style={{ height: '40vw', width: '100vw' }}
               src="/assets/friends.avif"
               alt="Group of friends"
-              className="shadow-lg  aspect-[949/705] "
+              className="shadow-lg  aspect-[949/705] object-cover"
 
             />
           </div>
@@ -228,9 +228,9 @@ const Page = () => {
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {authors.map((author, index) => (
             <div
-            onClick={() => router.push('/author')}
+              onClick={() => router.push('/author')}
               key={index}
-              className={`py-12 cursor-pointer shadow-md text-center ${author.highlighted ? "bg-yellow-100" : "bg-gray-100"
+              className={`py-12 cursor-pointer shadow-md text-center ${author.highlighted ? "bg-gray-200" : "bg-gray-100"
                 }`}
             >
               <img
@@ -238,8 +238,8 @@ const Page = () => {
                 alt={author.name}
                 className="w-24 h-24 mx-auto rounded-full object-cover border-4 border-gray-200"
               />
-              <h3 className="mt-4 text-xl font-thin text-gray-900">{author.name}</h3>
-              <p className="text-gray-600">{author.role}</p>
+              <h3 className="mt-4 font-thin text-gray-900">{author.name}</h3>
+              <p className="text-gray-600 text-[12px] mt-1">{author.role}</p>
               <div className="mt-4  space-x-4 flex justify-around items-center aspect-[112/16]">
                 <div className="w-[50%] flex justify-around ">
                   {author.social.map((platform, i) => (
@@ -259,7 +259,7 @@ const Page = () => {
 
       <section className="h-[5vw] my-16">
         <div className="flex justify-around items-center">
-          <div><span className="text-gray-400 mb-[-1vw]">We are </span><h5 className="text-gray-400">Feature in</h5></div>
+          <div><span className="text-gray-400 text-[12px]">We are </span><h5 className="text-gray-400 mt-[-1vw]">Feature in</h5></div>
           <div className="w-[70%]">
             <img src={`/assets/logIpsum-row.png`}
               alt="Ipsum Logos"
@@ -272,36 +272,38 @@ const Page = () => {
 
 
       {/* ==============Testimonals============ */}
-      <section className="  px-6">
-        <div className="bg-grayAccent py-16 px-16 max-w-6xl mx-auto flex flex-col md:flex-row items-center">
+      <section className="px-6">
+        <div className="bg-grayAccent pt-16 px-16 max-w-6xl mx-auto flex flex-col md:flex-row items-center">
           {/* Left Section */}
           <div className="md:w-1/2 pr-10">
-            <h5 className="uppercase text-sm font-semibold tracking-wider text-gray-600">
-              Testimonials
-            </h5>
-            <h2 className="text-3xl font-bold text-gray-900 mt-2">
-              What people say about our blog
-            </h2>
-            <p className="text-gray-600 mt-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-            </p>
+            <div className="w-[80%]">
+              <h5 className="uppercase text-sm font-semibold tracking-wider text-gray-600">
+                Testimonials
+              </h5>
+              <h2 className="mt-2">
+                What people say about our blog
+              </h2>
+              <p className="text-gray-600 mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+              </p>
+            </div>
           </div>
 
           {/* Divider */}
-          <div className="hidden md:block w-[1px] bg-gray-300 h-24 mx-8"></div>
+          <div className="md:block w-[1px] bg-gray-300 h-24 mx-8"></div>
 
           {/* Right Section */}
           <div className="md:w-1/2 flex flex-col">
-            <p className="text-lg text-gray-800 font-medium">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua."
-            </p>
+            <h4 className="">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.
+            </h4>
 
             {/* Author Details */}
-            <div className="mt-6 flex items-center justify-between">
+            <div className="mt-16 flex items-center justify-between">
               <div className="flex items-center">
                 <img
-                  src="/assets/person2.webp"
+                  src="/assets/andrew-johnson.png"
                   alt="Jonathan Vallem"
                   className="w-10 h-10 rounded-full object-cover"
                 />

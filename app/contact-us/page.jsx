@@ -38,15 +38,15 @@ const Page = () => {
                             <input
                                 type="text"
                                 placeholder="Full Name"
-                                className="w-[100%] border border-gray-300 p-5 placeholder-black"
+                                className="w-[100%] border border-gray-300 p-5 placeholder-gray-500"
                             />
                             <input
                                 type="text"
                                 placeholder="Your Email"
-                                className="w-[100%] border border-gray-300 p-5 placeholder-black"
+                                className="w-[100%] border border-gray-300 p-5 placeholder-gray-500"
                             />
-                            <select className="w-full p-3 border border-gray-300 p-5 placeholder-black">
-                                <option>Query Related</option>
+                            <select className="w-full p-3 border border-gray-300 p-5 px-3">
+                                <option className="text-gray-500">Query Related</option>
                                 <option>General Inquiry</option>
                                 <option>Technical Support</option>
                                 <option>Billing</option>
@@ -56,7 +56,7 @@ const Page = () => {
                             <textarea
                                 rows="4"
                                 placeholder="Message"
-                                className="w-full p-3 border border-gray-300 placeholder-black"
+                                className="w-full p-3 border border-gray-300 placeholder-gray-500"
                             ></textarea>
 
                             <button className="generalButton bg-secondary w-full py-8 font-semibold text-[3.5vh] transition">

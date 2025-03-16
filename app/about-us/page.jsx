@@ -10,7 +10,7 @@ const authors = [
     { name: "Jenny Wilson", role: "Content Writer @Company", img: "/assets/jenny-wilson.webp", social: ["facebook", "twitter", "instagram", "linkedin"], },
     { name: "Leslie Alexander", role: "Content Writer @Company", img: "/assets/leslie-alexander.webp", social: ["facebook", "twitter", "instagram", "linkedin"], },
     { name: "Guy Hawkins", role: "Content Writer @Company", img: "/assets/guy-hawkins.png", social: ["facebook", "twitter", "instagram", "linkedin"], },
-    { name: "Eleanor Pena", role: "Content Writer @Company", img: "/assets/eleaner-penna.png", social: ["facebook", "twitter", "instagram", "linkedin"], },
+    { name: "Eleanor Pena", role: "Content Writer @Company", img: "/assets/eleanor-pena.png", social: ["facebook", "twitter", "instagram", "linkedin"], },
     { name: "Robert Fox", role: "Content Writer @Company", img: "/assets/robert-fox.webp", social: ["facebook", "twitter", "instagram", "linkedin"], },
     { name: "Jacob Jones", role: "Content Writer @Company", img: "/assets/jacob-jones.webp", social: ["facebook", "twitter", "instagram", "linkedin"], },
 ];
@@ -46,24 +46,24 @@ const Page = () => {
 
                 {/* <div className="absolute bg-black inset-0 bg-opacity-50"></div> */}
 
-                <div className="absolute bottom-0 left-[20%]">
-                    <div className=" flex">
-                        <div className="bg-[#fbd354] flex-center flex-col p-10">
+                <div className="absolute bottom-0 left-[13%]">
+                    <div className="flex items-end">
+                        <div className="bg-secondary text-[#232536] flex-center flex-col h-[156px] w-[210px]">
                             <h1>12+</h1>
-                            <p>Blogs Published</p>
+                            <p className="text-[#232536]">Blogs Published</p>
                         </div>
-                        <div className="bg-[#fbd354] flex-center flex-col p-10">
+                        <div className="bg-secondary text-[#232536] flex-center flex-col h-[156px] w-[210px]">
                             <h1>18k+</h1>
-                            <p>Blogs Published</p>
+                            <p className="text-[#232536]">Blogs Published</p>
                         </div>
-                        <div className="bg-[#fbd354] flex-center flex-col p-10">
+                        <div className="bg-secondary text-[#232536] flex-center flex-col h-[156px] w-[210px]">
                             <h1>30K+</h1>
-                            <p>Blogs Published</p>
+                            <p className="text-[#232536]">Blogs Published</p>
                         </div>
                     </div>
                     <div className="flex">
                         <div className="bg-[#5c2dac] w-[21vw] h-[3vh]"></div>
-                        <div className="bg-[#fbd354] w-[35vw] h-[3vh]"></div>
+                        <div className="bg-secondary w-[35vw] h-[3vh]"></div>
                     </div>
                 </div>
 
@@ -83,7 +83,7 @@ const Page = () => {
                     <div className="w-[50%] h-[60vh] flex-center text-start">
                         <div className="w-[80%]">
                             <p className="uppercase tracking-wide">Our Vision</p>
-                            <h3 className="my-3">A platform that empovers individuals to improve</h3>
+                            <h3 className="my-3">A platform that empowers individuals to improve</h3>
                             <p className="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia atque labore, assumenda beatae alias accusamus omnis magnam vitae nulla, et voluptas quos quaerat dolorum adipisci animi placeat vero, deserunt cum.</p>
                         </div>
                     </div>
@@ -105,13 +105,13 @@ const Page = () => {
                         />
                     </div>
                 </div>
-                <div className="w-[7vw] h-[16vh] bg-[#fbd354] absolute mt-[-10vw] rounded-tl-3xl"></div>
+                <div className="w-[7vw] h-[16vh] bg-secondary absolute mt-[-10vw] rounded-tl-3xl"></div>
             </section>
 
             <section className="flex items-center justify-around relative h-100">
                 <div className="flex justify-end items-center w-[50%] ">
                     <img src="/assets/three-person-sitting-on-stairs.jpeg" alt=""
-                        className="w-[624px] h-[480px] relative"
+                        className="w-[624px] h-[480px] relative object-cover"
                     />
                 </div>
                 <div className="w-[50%] h-[100vh] flex">
@@ -119,7 +119,7 @@ const Page = () => {
                         <div className="w-[75%] ">
                             <h2>Why we started this Blog</h2>
                             <h3 className="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam.</h3>
-                            <p className="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dignissimos tempora maxime, magnam laborum nam soluta voluptatum reiciendis autem? Repellendus quae excepturi molestias adipisci voluptatem qui quos harum earum asperiores.</p>
+                            <p className="text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dignissimos tempora maxime, magnam laborum nam soluta voluptatum reiciendis autem? Repellendus quae excepturi molestias adipisci voluptatem qui quos harum earum asperiores.</p>
                         </div>
                     </div>
                 </div>

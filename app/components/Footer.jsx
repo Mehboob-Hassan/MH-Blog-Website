@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-[#232536] text-white py-12">
       <div className="w-[90%] h-[70vh] mx-auto px-6">
         {/* Top Section */}
         <div className="flex flex-col md:flex-row justify-between items-center">
@@ -15,17 +15,17 @@ export default function Footer() {
         </div>
 
         {/* Newsletter Section */}
-        <div className="bg-gray-800 p-16  h-[40vh] mt-[8%] flex justify-between items-center">
-          <h2 className="text-2xl font-semibold w-[50%]">
+        <div className="bg-[#2e3040] p-16  h-[40vh] mt-[8%] flex justify-between items-center">
+          <h2 className="font-semibold w-[50%]">
             Subscribe to our newsletter to get latest updates and news
           </h2>
           <div className="mt-4 flex flex-col md:flex-row items-center">
             <input
               type="email"
               placeholder="Enter Your Email"
-              className="w-full md:w-2/3 px-4 py-3 bg-gray-800 border border-[1px]  text-white-900 focus:outline-none"
+              className="w-full md:w-2/3 px-4 py-3 bg-[#2e3040] border border-[1px] text-white-900 focus:outline-none"
             />
-            <button className="generalButton mt-4 md:mt-0 md:ml-4 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 shadow-md transition">
+            <button className="generalButton mt-4 md:mt-0 md:ml-4 ">
               Subscribe
             </button>
           </div>

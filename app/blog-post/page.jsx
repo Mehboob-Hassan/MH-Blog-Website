@@ -13,7 +13,7 @@ const Page = () => {
                         <img
                             src="/assets/andrew-johnson.png"
                             alt="author"
-                            className="rounded-full h-[4vw] w-[4vw]"
+                            className="rounded-full h-[4vw] w-[4vw] "
                         />
                         <div className="">
                             <h3 className="text-[#683cb1]  font-semibold">Andrew Johnson</h3>
@@ -26,7 +26,7 @@ const Page = () => {
                     <div className="pg-yellow-200 mx-[6vw] mt-[2.5vw] w-[70%]">
                         <img
                             src="/assets/startup.png"
-                            className="h-[32px] w-[120px]"
+                            className="h-[32px] w-[120px] "
                         />
                     </div>
                 </div>
@@ -36,7 +36,7 @@ const Page = () => {
                 <img
                     src="/assets/blog-post-main.webp"
                     alt=""
-                    className="w-[1200px] h-[582px]"
+                    className="w-[1200px] h-[582px] object-cover"
                 />
             </section>
 
@@ -64,27 +64,27 @@ const Page = () => {
                     <div className="flex justify-around item-center">
                         <div className="w-[32%]">
                             <img src="/assets/girl-on-board.webp" alt="" />
-                            <p className="m-2">
+                            <p className="mx-2 my-6 text-[15px]" >
                                 By <span className="text-primary">Johm Doe</span> | May 23, 2022
                             </p>
                             <h4 className=" my-2">A UX Case Study Creating a Studios Environment for Students:</h4>
-                            <p className="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, praesentium minima, ad ipsa non debitis culpa nihil mollitia iste tempora aperiam, quod distinctio veniam placeat. Porro quia nesciunt perspiciatis voluptatum.</p>
+                            <p className="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, praesentium minima, ad ipsa non debitis culpa nihil mollitia iste tempora aperiam, quod distinctio veniam placeat.</p>
                         </div>
                         <div className="w-[32%]">
                             <img src="/assets/team.jpg" alt="" />
-                            <p className="m-2">
+                            <p className="mx-2 my-6 text-[15px]">
                                 By <span className="text-primary">Johm Doe</span> | May 23, 2022
                             </p>
                             <h4 className=" my-2">A UX Case Study Creating a Studios Environment for Students:</h4>
-                            <p className="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, praesentium minima, ad ipsa non debitis culpa nihil mollitia iste tempora aperiam, quod distinctio veniam placeat. Porro quia nesciunt perspiciatis voluptatum.</p>
+                            <p className="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, praesentium minima, ad ipsa non debitis culpa nihil mollitia iste tempora aperiam, quod distinctio veniam placeat.</p>
                         </div>
                         <div className="w-[32%]">
                             <img src="/assets/woman-looking-man.webp" alt="" />
-                            <p className="m-2">
+                            <p className="mx-2 my-6 text-[15px]">
                                 By <span className="text-primary">Johm Doe</span> | May 23, 2022
                             </p>
-                            <h4 className=" my-2">A UX Case Study Creating a Studios Environment for Students:</h4>
-                            <p className="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, praesentium minima, ad ipsa non debitis culpa nihil mollitia iste tempora aperiam, quod distinctio veniam placeat. Porro quia nesciunt perspiciatis voluptatum.</p>
+                            <h4 className="my-2">A UX Case Study Creating a Studios Environment for Students:</h4>
+                            <p className="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, praesentium minima, ad ipsa non debitis culpa nihil mollitia iste tempora aperiam, quod distinctio veniam placeat.</p>
                         </div>
                     </div>
                 </div>

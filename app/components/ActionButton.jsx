@@ -1,6 +1,6 @@
 const ActionButton = () => {
   return (
-    <section className="py-16 bg-white text-center">
+    <section className="bg-white text-center h-screen flex-center">
       <div className="max-w-[35vw] mx-auto  w-[60%]">
         <h2>
           Join our team to be a part of our story
@@ -12,7 +12,7 @@ const ActionButton = () => {
           <a
             href="/contact-us"
           >
-            <button className="generalButton hover:bg-yellow-500 text-black font-semibold py-3 px-6 shadow-md transition">
+            <button className="generalButton">
               Join Now
             </button>
           </a>

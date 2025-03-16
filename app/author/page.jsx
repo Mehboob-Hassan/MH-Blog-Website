@@ -37,8 +37,8 @@ const Page = () => {
 
                     </div>
                     <div className="w-[80%] h-[22vw] flex justify-center items-start flex-col ml-6">
-                        <h2 className="tracking-tight">Hey there, I am Andrew Johnson and welcome to my Blog</h2>
-                        <p className="my-4 w-[80%] text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quam quae harum. Quibusdam alias blanditiis ea corrupti ullam nam praesentium at molestias quae recusandae.</p>
+                        <h1 style={{ letterSpacing: "-3px" }} className="text-[#232536]">Hey there, I am Andrew Johnson and welcome to my Blog</h1>
+                        <p className="my-4 w-[80%] text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quam quae harum. Quibusdam alias blanditiis ea corrupti ullam nam praesentium at molestias quae recusandae.</p>
                         <div className="w-[20%] flex items-center justify-around ">
                             {socials.map((platform, i) => (
                                 <img src={`/assets/${platform}.png`}
@@ -56,8 +56,12 @@ const Page = () => {
             </section>
 
             <section className="mb-16">
+
                 <div>
                     <div className="p-4">
+                        <div className="w-[100%] items-center w-[75%] mt-[10vh]  container mx-auto flex justify-start">
+                            <h1 className="w-[50%]">My Posts</h1>
+                        </div>
                         {posts &&
                             posts.map((item, inedex) => (
                                 <div className="flex justify-center my-12">
