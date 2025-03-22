@@ -8,7 +8,7 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600", "700"], var
 
 
 export const metadata = {
-  title: "MH Blog Web",
+  title: "Student-run Blog App",
   description: "Blog website created by MH",
 };
 
